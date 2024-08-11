@@ -11,7 +11,7 @@ const Navbar = () => {
 
     }
     const filterbyPrice = (price) => {
-        setFilterData(products.filter((data) => data.price >= price));
+        setFilterData(products.filter((data) => data.price <= price));
 
     }
     const submitHandler = (e) => {
@@ -63,11 +63,11 @@ const Navbar = () => {
                     <div className="items" onClick={() => filterbyCategory('laptops')}>Laptops</div>
                     <div className="items" onClick={() => filterbyCategory('cameras')}>Cameras</div>
                     <div className="items" onClick={() => filterbyCategory('headphones')}>Headphones</div>
-                    <div className="items" onClick={() => filterbyPrice(1999)}>1999</div>
-                    <div className="items" onClick={() => filterbyPrice(2999)}>2999</div>
-                    <div className="items" onClick={() => filterbyPrice(3999)}>3999</div>
-                    <div className="items" onClick={() => filterbyPrice(4999)}>4999</div>
-                    <div className="items" onClick={() => filterbyPrice(5999)}>5999</div>
+                    <div className="items" onClick={() => filterbyPrice(3999)}> 3999</div>
+                    <div className="items" onClick={() => filterbyPrice(4999)}> 4999</div>
+                    <div className="items" onClick={() => filterbyPrice(6999)}> 6999</div>
+                    <div className="items" onClick={() => filterbyPrice(7999)}>7999</div>
+                    <div className="items" onClick={() => filterbyPrice(10999)}>10999</div>
                 </div>
                 )}
 
