@@ -1,11 +1,13 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import AppContext from '../../context/AppContext';
 import RelatedProduct from './RelatedProduct';
 const ProductDetail = () => {
   useState
   const{id}=useParams();
-  const url = "http://localhost:1000/api";
+  // const url = "http://localhost:1000/api";
+  const {url}= useContext(AppContext);
   const [product,setProduct]=useState();
 
    useEffect(() => {
