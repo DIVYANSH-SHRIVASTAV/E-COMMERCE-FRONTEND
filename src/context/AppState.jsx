@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
   
 const AppState = (props) => {
     // const url = "http://localhost:1000/api";
-  const url = "https://e-commerce-api-be5v.onrender.com/api";
+  const url = "https://e-commerce-api-ca45.onrender.com/api";
    const [products,setProducts]=useState([]);
    const [token,setToken]=useState([]);
    const [isAuthenticated,setIsAuthenticated]=useState(false);
