@@ -4,7 +4,7 @@ import axios from 'axios';
 import AppContext from '../../context/AppContext';
 import RelatedProduct from './RelatedProduct';
 const ProductDetail = () => {
-  useState
+  // useState
   const{id}=useParams();
   // const url = "http://localhost:1000/api";
   const {url}= useContext(AppContext);
